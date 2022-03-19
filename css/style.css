@@ -76,7 +76,6 @@ input {
   color: var(--font-colour);
   background-color: var(--country-bg-color);
   outline: transparent !important;
-  /* margin-right: 10px; */
 }
 
 input::placeholder{
@@ -163,7 +162,3 @@ input::placeholder{
     row-gap: 3rem;
   }
 }
-
-/* h3 {
-  font-size: 12px;
-} */

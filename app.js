@@ -5,7 +5,6 @@ const countryBody = document.querySelector('.countries-body');
 const regions = document.querySelectorAll('.dropdown-item');
 const countryRegion = document.getElementsByClassName('country-region');
 
-
 const mode = document.querySelector('.mode');
 const body = document.querySelector('body');
 mode.addEventListener('click', ()=>{
@@ -16,19 +15,12 @@ mode.addEventListener('click', ()=>{
 function toggleMode() {
   
   if (body.classList === ('dark-mode')) {
-    // body.classList.remove('dark-mode');
     body.classList.toggle('dark-mode')
   } else {
-    // body.classList.add('dark-mode');
     body.classList.toggle('dark-mode')
   }
 }
 
-
-
-
-
-// regions.fo
 function getCountries() {
 
   const XHR = new XMLHttpRequest();
