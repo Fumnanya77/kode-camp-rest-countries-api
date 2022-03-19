@@ -29,6 +29,10 @@ body {
   overflow: scroll;
 }
 
+.container {
+  margin: 3% auto !important;
+}
+
 .shadow-c {
   box-shadow: var(--shadow-c);
 }
@@ -69,6 +73,7 @@ body {
   color: var(--bg-colour);
   background-color: var(--country-bg-color);
   box-shadow: var(--shadow-c);
+  font-size: 16px;
 }
 
 input {
@@ -82,8 +87,9 @@ input::placeholder{
   padding: 10px;
 }
 
-.drop-down {
+.dropdown {
   outline: none !important;
+  margin: 3%;
 }
 
 #countries-list {
@@ -91,6 +97,7 @@ input::placeholder{
   grid-template-columns: repeat(4, 1fr);
   column-gap: 4rem;
   row-gap: 4rem;
+  font-size: 16px;
 }
 
 .card {
@@ -117,7 +124,7 @@ input::placeholder{
  .search-icon {
   position: absolute;
   left: 0;
-  top: 140px;
+  top: 170px;
 }
 
 #details-section {
@@ -155,6 +162,13 @@ input::placeholder{
 
 
 @media only screen and (max-width:376px) {
+  .top-header {
+    font-size: 10px;
+  }
+
+  .mode {
+    font-size: 14px;
+  }
   #countries-list {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
