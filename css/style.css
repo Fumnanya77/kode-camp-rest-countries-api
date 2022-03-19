@@ -1,0 +1,169 @@
+@import url(https://fonts.google.com/specimen/Nunito+Sans);
+
+.dark-mode {
+  --bg-colour: hsl(209, 26%, 17%);
+  --font-colour: hsl(0, 0%, 100%);
+  --country-bg-color: hsl(208, 23%, 22%);
+  --shadow-c: 1.5px 1.5px 10px #1a2631, -1.5px -1.5px 10px #1a2631;
+  background-color: var(--bg-colour) ;
+  color: var(--font-colour);
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  --bg-colour: hsl(0, 0%, 98%);
+  --font-colour: hsl(200, 15%, 8%);
+  --country-bg-color: hsl(0, 0%, 100%);
+  --shadow-c: 1.5px 1.5px 3px #ddd, -1.5px -1.5px 3px #ddd ;
+  background-color: var(--bg-colour) ;
+  color: var(--font-colour);
+  @font-face{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 300px;
+  }
+  width: 100%;
+  max-height: 100vh;
+  overflow: scroll;
+}
+
+.shadow-c {
+  box-shadow: var(--shadow-c);
+}
+
+.btn {
+  color: var(--font-colour) !important;
+  background-color: var(--country-bg-color) !important;
+}
+
+.text-white {
+  color: var(--font-colour) !important;
+}
+
+.text-black{
+  color: var(--font-colour) !important;
+}
+
+.bg-white {
+  background-color: var(--country-bg-color) !important;
+}
+
+.mode {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.top-text-header {
+  color: var(--font-colour);
+}
+
+.form-control {
+  color: var(--font-colour);
+  background-color: var(--country-bg-color);
+  border: none;
+}
+
+.top-header {
+  color: var(--bg-colour);
+  background-color: var(--country-bg-color);
+  box-shadow: var(--shadow-c);
+}
+
+input {
+  width: 100%;
+  color: var(--font-colour);
+  background-color: var(--country-bg-color);
+  outline: transparent !important;
+  /* margin-right: 10px; */
+}
+
+input::placeholder{
+  padding: 10px;
+}
+
+.drop-down {
+  outline: none !important;
+}
+
+#countries-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 4rem;
+  row-gap: 4rem;
+}
+
+.card {
+  border: none;
+  color: var(--font-colour);
+  background-color: var(--country-bg-color);
+}
+
+.flag {
+  height: 200px;
+}
+
+.flag img{
+  height: 100%;
+  width: 100%;
+  border-radius: 0.5rem 0.5rem 0 0;
+  object-fit: cover;
+}
+
+.switch {
+  display: none;
+}
+
+ .search-icon {
+  position: absolute;
+  left: 0;
+  top: 140px;
+}
+
+#details-section {
+  font-size: 14px;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  color: var(--font-colour);
+  background-color: var(--bg-colour);
+}
+
+.flag-display img {
+  max-width: 500px;
+}
+
+@media only screen and (max-width:989px) {
+  #countries-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3rem;
+    row-gap: 3rem;
+  }
+}
+
+@media only screen and (max-width:767px) {
+  #countries-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3rem;
+    row-gap: 3rem;
+  }
+}
+
+
+@media only screen and (max-width:376px) {
+  #countries-list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 3rem;
+    row-gap: 3rem;
+  }
+}
+
+/* h3 {
+  font-size: 12px;
+} */
